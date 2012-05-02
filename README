@@ -1,4 +1,7 @@
-This repo is a project for merging together natality / birth certificate data available from the CDC.
+This repo is a project for merging together natality / birth certificate microdata available from the CDC.
+
+This is individual-level data on births, and includes demographic data on the parents, and medical information
+about each birth.
 
 The original public-use data is available here:
 http://www.cdc.gov/nchs/data_access/Vitalstatsonline.htm
