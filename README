@@ -11,3 +11,22 @@ locations with variable names.  One could do this by downloading the User's Guid
 (available at the above link) and writing a program to read in the raw data.  Alternatively, you might  visit
 the National Bureau of Economic Research's excellent website, and download the pre-formatted Stata data here:
 http://www.nber.org/data/vital-statistics-natality-data.html
+
+To use the code in this repo, the original data must be unzipped, and formatted for use in Stata.  
+
+The input datasets are:
+natl2000.dta
+natl2001.dta
+natl2002.dta
+natl2003.dta
+natl2004.dta
+
+The output datasets are:
+natl2000_rev.dta
+natl2001_rev.dta
+natl2002_rev.dta
+natl2003_rev.dta
+natl2004_rev.dta
+natl_master.dta
+
+This code requires a significant amount of RAM as the natl_master merged dataset is approximately 6GB in size.
