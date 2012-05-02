@@ -1,15 +1,11 @@
 This repo is a project for merging together natality / birth certificate microdata available from the CDC.
 
-This is individual-level data on births, and includes demographic data on the parents, and medical information
-about each birth.
+This is individual-level data on births, and includes demographic data on the parents, and medical information about each birth.
 
 The original public-use data is available here:
 http://www.cdc.gov/nchs/data_access/Vitalstatsonline.htm
 
-However, the original data is in raw .dat format.  For the raw data to be meaningful, one must associate data
-locations with variable names.  One could do this by downloading the User's Guide for each data set 
-(available at the above link) and writing a program to read in the raw data.  Alternatively, you might  visit
-the National Bureau of Economic Research's excellent website, and download the pre-formatted Stata data here:
+However, the original data is in raw .dat format.  For the raw data to be meaningful, one must associate data locations with variable names.  One could do this by downloading the User's Guide for each data set (available at the above link) and writing a program to read in the raw data.  Alternatively, you might  visit the National Bureau of Economic Research's excellent website, and download the pre-formatted Stata data here:
 http://www.nber.org/data/vital-statistics-natality-data.html
 
 To use the code in this repo, the original data must be unzipped, and formatted for use in Stata.  
