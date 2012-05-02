@@ -1,0 +1,10 @@
+This repo is a project for merging together natality / birth certificate data available from the CDC.
+
+The original public-use data is available here:
+http://www.cdc.gov/nchs/data_access/Vitalstatsonline.htm
+
+However, the original data is in raw .dat format.  For the raw data to be meaningful, one must associate data
+locations with variable names.  One cold do this by downloading the User's Guide for each data set 
+(available at the above link) and writing a program to read in the raw data, or by visiting the National 
+Bureau of Economic Research's most excellent website, and downloading the pre-formatted Stata data here:
+http://www.nber.org/data/vital-statistics-natality-data.html
