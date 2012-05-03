@@ -1,14 +1,17 @@
 /* natality_merge.do */
 /* merges 2000 - 2004 CDC Natality data & drops irrelevant records & vars */
 /* data from: http://www.nber.org/data/vital-statistics-natality-data.html */
-/* RFBoyce 02 May 2012 */
+/* RFBoyce 03 May 2012 */
 
 clear
 
-/* Stata needs 9G of mem to run this prg.  This will freeze up a personal computer - use with caution */
-//set mem 9g
+/* Stata needs 7G of mem to run this prg.  This will freeze up a personal computer - use with caution */
+set mem 7g
 
-cd ~/Documents/CPDS/Summer
+set more off
+
+//cd ~/Documents/CPDS/Summer
+//cd ./Summer
 
 /* data from 2000 - 2002 have the same varnames */
 foreach y in 2000 2001 2002{
@@ -24,7 +27,7 @@ foreach y in 2000 2001 2002{
 		53 "WA" 54 "WV" 55 "WI" 56 "WY"
 	label values state state
 	/* drop vars that won't be used in analysis */
-	anemia cardiac lung herpes hydra hemo incervix renal rh uterine othermr amnio monitor induct stimula        ///
+	drop anemia cardiac lung herpes hydra hemo incervix renal rh uterine othermr amnio monitor induct stimula        ///
 	tocol ultras otherob febrile meconium rupture abruptio preplace excebld seizure precip prolong dysfunc      ///
 	breech cephalo cord anesthe distress otherlb nanemia injury alcosyn hyaline meconsyn venl30 ven30m nseiz    ///
 	otherab anen spina hydro microce nervous heart circul rectal tracheo omphalo gastro genital renalage urogen ///
