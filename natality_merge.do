@@ -5,13 +5,14 @@
 
 clear
 
-/* Stata needs 7G of mem to run this prg.  This will freeze up a personal computer - use with caution */
-set mem 7g
+/* Stata needs 6G of mem to run this prg.  This will freeze up a personal computer - use with caution */
+// set mem 6g
 
 set more off
 
 //cd ~/Documents/CPDS/Summer
 //cd ./Summer
+cd ~/shared_space/sacerdot/natl_orig
 
 /* data from 2000 - 2002 have the same varnames */
 foreach y in 2000 2001 2002{
